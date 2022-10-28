@@ -1,0 +1,24 @@
+{
+  "name": "employee_stats",
+  "version": "1.0.0",
+  "description": "A program to easily insert stats for your employees.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolaki96/Employee_Stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolaki96/Employee_Stats/issues"
+  },
+  "homepage": "https://github.com/wolaki96/Employee_Stats#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.2.2"
+  }
+}
