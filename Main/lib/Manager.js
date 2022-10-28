@@ -2,8 +2,8 @@ const Employee = require('./Employee');
 
 class Manager extends Employee {
     //adds the github
-    constructor(name, id, email, officeNumber){
-        super(name, id, email);
+    constructor(memberName, id, email, officeNumber){
+        super(memberName, id, email);
         this.officeNumber = officeNumber;
     }
 
