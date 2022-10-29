@@ -17,4 +17,5 @@ getRole() {
 
 }
 
+
 module.exports = Manager;

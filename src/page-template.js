@@ -1,4 +1,21 @@
+const generateHTML = team => {
+    return `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    ${team}   
+    
+    </body>
+    </html>`
+}
+
 const generateTeam = team => {
+
     const teamMembers = [];
     // create the manager html
     const generateManager = manager => {
@@ -62,7 +79,7 @@ const generateTeam = team => {
 
     // use the team array to generate pieces of html based on the employee role
 }
-
-module.exports = team => {
-    // template literal - html body that calls the generate team function
-}
+module.exports = generateHTML
+// module.exports = team => {
+//     // template literal - html body that calls the generate team function
+// }
