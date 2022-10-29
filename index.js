@@ -10,7 +10,7 @@ const DIST_DIR = path.resolve(__dirname, './Main/Dist');
 const distPath = path.join(DIST_DIR, 'index.html');
 const generateHTML = require('./src/page-template');
 
-const teamMembers = [];
+const teamMembers= [];
 // deploys the html and asks if you want to add an employee
 function employeeStats() {
   addEmployee();

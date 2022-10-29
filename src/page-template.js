@@ -65,8 +65,38 @@ const generateHTML = team => {
 }
 
     // use the team array to generate pieces of html based on the employee role
+    // if (role==="Manager") {
+    //     generateManager(team[i]);
+    //   } else if(role ==="Engineer") {
+    //     generateEngineer(team[i]);
+    //   }else if(role === "Intern"){
+    //     generateIntern(team[i]);
+    //     return memberCards;
+    //   }
 
-module.exports = generateHTML
+      
+    
+    
+
+module.exports = team => {
+    return `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Cards</title>
+    </head>
+   
+    <body>
+    <div class= "container">
+    <div class="row row-cols-3">
+    
+    </div>
+    </body>
+    </html>`
+ }
+
 // module.exports = team => {
 //     // template literal - html body that calls the generate team function
 // }
