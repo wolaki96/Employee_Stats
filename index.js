@@ -6,8 +6,8 @@ const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 
-// const DIST_DIR = path.resolve(__dirname, 'Dist');
-// const distPath = path.join(DIST_DIR, 'dist.html');
+const DIST_DIR = path.resolve(__dirname, './Main/Dist');
+const distPath = path.join(DIST_DIR, 'index.html');
 const generateHTML = require('./src/page-template');
 
 const teamMembers = [];
@@ -57,7 +57,7 @@ inquirer.prompt([
   
   inquirer.prompt([
     { 
-      type: 'Input',
+      type: 'input',
       message: `Please enter the ${employeeData} of the employee`,
       name: 'employeeInfo'
     },
@@ -102,8 +102,8 @@ inquirer.prompt([
 
 // at the end, use fs to write file while sending the team array over to the function you brought in from page-template.js
 })}
-function showhtml(data) {
-  fs.writeFile("./index.html", generateHTML(data), (err) =>
+function showhtml(teamMembers) {
+  fs.writeFileSync(distPath, generateHTML(teamMembers), (err) =>
       err ? console.error(err) : console.log('HTML file saved as index.html in dist folder')
   )
 }
